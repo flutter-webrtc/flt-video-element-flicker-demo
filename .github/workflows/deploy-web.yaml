@@ -18,7 +18,6 @@ jobs:
       - run: flutter clean
       - run: flutter pub get
       - run: |
-          cd example
           flutter build web --release --base-href /flt-video-element-flicker-demo/
           cd build/web
           git init
